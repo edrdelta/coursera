@@ -30,4 +30,23 @@
 # 1 q1<-read_csv('https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv')
 # download.file('https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FDATA.gov_NGAP.xlsx', 'data/clean_q1.xlsx')
 # dat<-read.xls('data/clean_q1.xlsx', sheet = 1, skip = 17, nrows = 5, header = T, blank.lines.skip = F) %>% select(7:15)
-myurl<-getURL('https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml')
+# xmldataframe <- xmlToDataFrame(myurl)
+
+# library(XML)
+# library(RCurl)
+# myurl<-getURL('https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Frestaurants.xml')
+# rootNode<-xmlRoot(xmlTreeParse(myurl, useInternal=TRUE))
+# test <- xmlSApply(rootNode[[1]], function(x) xmlSApply(x, xmlValue))
+# test_df <- data.frame(t(test),row.names=NULL)
+# length(test_df$name[test_df$zipcode == 21231])
+
+# download.file('https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv', 'data/clean_q5.csv')
+# install.packages('data.table')
+# library(data.table)
+# DT<-fread('https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv')
+# tapply(DT$pwgtp15,DT$SEX,mean)
+# sapply(split(DT$pwgtp15,DT$SEX),mean)
+# mean(DT[DT$SEX==1,]$pwgtp15); mean(DT[DT$SEX==2,]$pwgtp15)
+# rowMeans(DT)[DT$SEX==1]; rowMeans(DT)[DT$SEX==2]
+# mean(DT$pwgtp15,by=DT$SEX)
+# DT[,mean(pwgtp15),by=SEX]
